@@ -1,0 +1,36 @@
+{
+  "testCases" : [ {
+    "uid" : "d8138462330b2dc9",
+    "name" : "TestConverter.test_check_default_settings",
+    "title" : "Test check default settings",
+    "time" : {
+      "start" : 1517473385661,
+      "stop" : 1517473391490,
+      "duration" : 5829
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "2f04a9bf6ed83021",
+    "name" : "TestConverter.test_converting_with_changed_currency",
+    "title" : "Test converting with changed currency",
+    "time" : {
+      "start" : 1517473391555,
+      "stop" : 1517473399842,
+      "duration" : 8287
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  }, {
+    "uid" : "63ae2a7985b9f517",
+    "name" : "TestConverter.test_converting_with_default_settings",
+    "title" : "Test converting with default settings",
+    "time" : {
+      "start" : 1517473399915,
+      "stop" : 1517473407601,
+      "duration" : 7686
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  } ]
+}

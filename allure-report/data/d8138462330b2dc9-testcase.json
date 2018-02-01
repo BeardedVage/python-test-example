@@ -1,0 +1,113 @@
+{
+  "uid" : "d8138462330b2dc9",
+  "name" : "TestConverter.test_check_default_settings",
+  "title" : "Test check default settings",
+  "time" : {
+    "start" : 1517473385661,
+    "stop" : 1517473391490,
+    "duration" : 5829
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 3
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "75017bb3f3b17584",
+    "name" : "test_sbConverter",
+    "title" : "Test sb converter"
+  },
+  "steps" : [ {
+    "name" : "Opening browser on converter page",
+    "title" : "Opening browser on converter page",
+    "time" : {
+      "start" : 1517473385663,
+      "stop" : 1517473390196,
+      "duration" : 4533
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check default values in converter.",
+    "title" : "Check default values in converter.",
+    "time" : {
+      "start" : 1517473390198,
+      "stop" : 1517473391489,
+      "duration" : 1291
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Closing browser.",
+    "title" : "Closing browser.",
+    "time" : {
+      "start" : 1517473391491,
+      "stop" : 1517473391552,
+      "duration" : 61
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "7d35b1ec-1ee1-4820-939e-c718496df317-attachment.txt",
+    "type" : "text/plain",
+    "size" : 2327,
+    "uid" : "a4d20cf4c291345b"
+  }, {
+    "title" : "Captured log call",
+    "source" : "93e1b77e-3013-4e1f-86cc-5979f2d634ea-attachment.txt",
+    "type" : "text/plain",
+    "size" : 3632,
+    "uid" : "36aaa23d089744ba"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "vage-VirtualBox"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "thread",
+    "value" : "2256-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_sbConverter"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Functional testing"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Check convertation of currency"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  } ],
+  "parameters" : [ ]
+}

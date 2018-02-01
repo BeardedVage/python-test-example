@@ -1,0 +1,173 @@
+{
+  "uid" : "2f04a9bf6ed83021",
+  "name" : "TestConverter.test_converting_with_changed_currency",
+  "title" : "Test converting with changed currency",
+  "time" : {
+    "start" : 1517473391555,
+    "stop" : 1517473399842,
+    "duration" : 8287
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 7
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "75017bb3f3b17584",
+    "name" : "test_sbConverter",
+    "title" : "Test sb converter"
+  },
+  "steps" : [ {
+    "name" : "Opening browser on converter page",
+    "title" : "Opening browser on converter page",
+    "time" : {
+      "start" : 1517473391556,
+      "stop" : 1517473397402,
+      "duration" : 5846
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Enter value of currency and choose currency in calculator and assert calculation result",
+    "title" : "Enter value of currency and choose currency in calculator and assert calculation result",
+    "time" : {
+      "start" : 1517473397404,
+      "stop" : 1517473399841,
+      "duration" : 2437
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 4
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "Entering the next value to convert: 1",
+      "title" : "Entering the next value to convert: 1",
+      "time" : {
+        "start" : 1517473397404,
+        "stop" : 1517473398355,
+        "duration" : 951
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Choose currency from: USD",
+      "title" : "Choose currency from: USD",
+      "time" : {
+        "start" : 1517473398355,
+        "stop" : 1517473398838,
+        "duration" : 483
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Convert data by actual rate: 55.31",
+      "title" : "Convert data by actual rate: 55.31",
+      "time" : {
+        "start" : 1517473398838,
+        "stop" : 1517473399714,
+        "duration" : 876
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Verifying result of conversation.",
+      "title" : "Verifying result of conversation.",
+      "time" : {
+        "start" : 1517473399714,
+        "stop" : 1517473399841,
+        "duration" : 127
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Closing browser.",
+    "title" : "Closing browser.",
+    "time" : {
+      "start" : 1517473399843,
+      "stop" : 1517473399912,
+      "duration" : 69
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "23810c0f-335e-4df6-bcde-9d0332d17bd8-attachment.txt",
+    "type" : "text/plain",
+    "size" : 2327,
+    "uid" : "ed62eedfccde8f24"
+  }, {
+    "title" : "Captured log call",
+    "source" : "4d59fded-524c-4ccf-8cc2-6c406383e2dc-attachment.txt",
+    "type" : "text/plain",
+    "size" : 9783,
+    "uid" : "d4272c47e096f770"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "vage-VirtualBox"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "thread",
+    "value" : "2256-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_sbConverter"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Functional testing"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Check convertation of currency"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  } ],
+  "parameters" : [ ]
+}

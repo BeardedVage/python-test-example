@@ -1,0 +1,158 @@
+{
+  "uid" : "63ae2a7985b9f517",
+  "name" : "TestConverter.test_converting_with_default_settings",
+  "title" : "Test converting with default settings",
+  "time" : {
+    "start" : 1517473399915,
+    "stop" : 1517473407601,
+    "duration" : 7686
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 6
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "75017bb3f3b17584",
+    "name" : "test_sbConverter",
+    "title" : "Test sb converter"
+  },
+  "steps" : [ {
+    "name" : "Opening browser on converter page",
+    "title" : "Opening browser on converter page",
+    "time" : {
+      "start" : 1517473399916,
+      "stop" : 1517473405509,
+      "duration" : 5593
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "Check work of calculator with default data.",
+    "title" : "Check work of calculator with default data.",
+    "time" : {
+      "start" : 1517473405511,
+      "stop" : 1517473407600,
+      "duration" : 2089
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 3
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "Entering the next value to convert: 1",
+      "title" : "Entering the next value to convert: 1",
+      "time" : {
+        "start" : 1517473405511,
+        "stop" : 1517473406513,
+        "duration" : 1002
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Convert data by actual rate: 0.02",
+      "title" : "Convert data by actual rate: 0.02",
+      "time" : {
+        "start" : 1517473406513,
+        "stop" : 1517473407457,
+        "duration" : 944
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "Verifying result of conversation.",
+      "title" : "Verifying result of conversation.",
+      "time" : {
+        "start" : 1517473407457,
+        "stop" : 1517473407600,
+        "duration" : 143
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "Closing browser.",
+    "title" : "Closing browser.",
+    "time" : {
+      "start" : 1517473407602,
+      "stop" : 1517473407662,
+      "duration" : 60
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "68a27492-3194-4c08-bb02-1ccd3f51637e-attachment.txt",
+    "type" : "text/plain",
+    "size" : 2327,
+    "uid" : "1f6bc1ae9192b83d"
+  }, {
+    "title" : "Captured log call",
+    "source" : "326cefe7-8f0f-4cd2-b9b4-ace78b0a2c13-attachment.txt",
+    "type" : "text/plain",
+    "size" : 7016,
+    "uid" : "c53d09e0b90e5812"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "vage-VirtualBox"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "thread",
+    "value" : "2256-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_sbConverter"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "feature",
+    "value" : "Functional testing"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "Check convertation of currency"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  } ],
+  "parameters" : [ ]
+}

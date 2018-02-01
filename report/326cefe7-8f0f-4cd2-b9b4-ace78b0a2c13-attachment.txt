@@ -1,0 +1,36 @@
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "css selector", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": ".rates-aside__filter-block-line-right input"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-1'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "css selector", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": ".rates-aside__filter-block-line-right input"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-1'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-1/clear {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-1"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': None}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "css selector", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": ".rates-aside__filter-block-line-right input"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-1'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-1/value {"text": "1", "sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-1", "value": ["1"]}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': None}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-button"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-2'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/execute {"sessionId": "edc5261506da27af811b9d04c72557d6", "args": [], "script": "window.scrollTo(0, document.body.scrollHeight);"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': None}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-2/click {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-2"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': None}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-3'}}
+remote_connection.py       480 DEBUG    GET http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-3/displayed {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-3"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': False}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-3'}}
+remote_connection.py       480 DEBUG    GET http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-3/displayed {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-3"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': True}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result__total-from"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-4'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result__total-from"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-4'}}
+remote_connection.py       480 DEBUG    GET http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-4/text {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-4"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': u'1,00 RUB ='}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result__total-to"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-5'}}
+remote_connection.py       480 DEBUG    POST http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element {"using": "class name", "sessionId": "edc5261506da27af811b9d04c72557d6", "value": "rates-converter-result__total-to"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': {u'ELEMENT': u'0.508863617901625-5'}}
+remote_connection.py       480 DEBUG    GET http://127.0.0.1:58727/session/edc5261506da27af811b9d04c72557d6/element/0.508863617901625-5/text {"sessionId": "edc5261506da27af811b9d04c72557d6", "id": "0.508863617901625-5"}
+remote_connection.py       567 DEBUG    Finished Request {u'status': 0, u'sessionId': u'edc5261506da27af811b9d04c72557d6', u'value': u'0,02 USD'}

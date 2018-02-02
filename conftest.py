@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 
+
 @pytest.fixture(scope="module", autouse=True)
 def driver(request):
     browser = webdriver.Chrome()
@@ -9,3 +10,4 @@ def driver(request):
     browser.implicitly_wait(10)
     yield browser
     browser.quit()
+

@@ -7,24 +7,30 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
+
 class SetCurrencyValue(BasePageElement):
     locator = (CalcPageLocators.CURRENCY_VALUE_INPUT)
+
 
 class GetConvertedValueFrom(BasePageElement):
     locator = CalcPageLocators.CONVERTED_CURRENCY_FROM_VALUE
 
+
 class GetConvertedValueTo(BasePageElement):
     locator = CalcPageLocators.CONVERTED_CURRENCY_TO_VALUE
+
 
 class GetDataFromCurrencyFromDropdown(BasePageElement):
     locator = CalcPageLocators.CURRENCY_FROM_VALUE
 
+
 class GetDataFromCurrencyToDropdown(BasePageElement):
     locator = CalcPageLocators.CURRENCY_TO_VALUE
 
+
 class GetDataFromCurrencyValueInput(BasePageElement):
     locator = CalcPageLocators.CURRENCY_VALUE_INPUT
-    
+
 
 class BasePage(object):
     """Base class to initialize the base page that will be called from all pages"""
@@ -34,7 +40,7 @@ class BasePage(object):
 
 
 class CalcPage(BasePage):
-    #Declares a variable that will contain the retrieved text
+    # Declares a variable that will contain the retrieved text
     set_currency_value = SetCurrencyValue()
     get_converted_value_from = GetConvertedValueFrom()
     get_converted_value_to = GetConvertedValueTo()
@@ -50,8 +56,9 @@ class CalcPage(BasePage):
     def choose_currency_from(self, curr_name):
         self.driver.execute_script("$(\"select\").css(\"display\", \"block\");")
         Select(self.driver.find_element_by_css_selector("select[name=\"converterFrom\"]")).select_by_visible_text(curr_name)
-        
+
     def click_convert_button(self):
         element = self.driver.find_element(*CalcPageLocators.CONVERT_BUTTON)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         element.click()
+

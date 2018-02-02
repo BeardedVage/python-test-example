@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 class SetCurrencyValue(BasePageElement):
-    locator = ('.rates-aside__filter-block-line-right input')
+    locator = (CalcPageLocators.CURRENCY_VALUE_INPUT)
 
 class GetConvertedValueFrom(BasePageElement):
     locator = CalcPageLocators.CONVERTED_CURRENCY_FROM_VALUE

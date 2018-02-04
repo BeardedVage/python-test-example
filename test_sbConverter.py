@@ -10,8 +10,9 @@ from decimal import *
 @allure.step('Check default values in converter.')
 def test_check_default_settings(driver):
     calc_page = page.CalcPage(driver)
-    assert_that(calc_page.get_data_from_currencyFrom_dropdown).text, equal_to('RUB')
-    assert_that(calc_page.get_data_from_currencyTo_dropdown).text, equal_to('USD')
+    print(calc_page.get_data_from_currencyFrom_dropdown.text)
+    assert_that(calc_page.get_data_from_currencyFrom_dropdown.text), equal_to('RUB')
+    assert_that(calc_page.get_data_from_currencyTo_dropdown.text), equal_to('USD')
     assert_that((calc_page.get_data_from_currencyValue_input).get_attribute('value')), equal_to('100')
 
 

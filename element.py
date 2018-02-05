@@ -3,18 +3,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class BasePageElement(object):
+class BasePageElement():
 
-    def __set__(self, obj, value):
-        """Sets the text to the value supplied"""
-        driver = obj.driver
-        element = WebDriverWait(driver, 8).until(EC.presence_of_element_located(self.locator))
-        element.clear()
-        element.send_keys(value)
+    def __init__(self, driver, locator):
+        self.driver = driver
+        self.locator = locator
 
-    def __get__(self, obj, owner):
+    @property    
+    def element(self):
         """Gets the text of the specified object"""
-        driver = obj.driver
+        driver = self.driver
         element = WebDriverWait(driver, 8).until(EC.presence_of_element_located(self.locator))
         return element
 
+    @element.setter
+    def element(self, value):
+        """Sets the text to the value supplied"""
+        driver = self.driver
+        element = WebDriverWait(driver, 8).until(EC.presence_of_element_located(self.locator))
+        element.clear()
+        element.send_keys(value)

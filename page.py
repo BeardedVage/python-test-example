@@ -8,30 +8,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 
-class SetCurrencyValue(BasePageElement):
-    locator = (CalcPageLocators.CURRENCY_VALUE_INPUT)
-
-
-class GetConvertedValueFrom(BasePageElement):
-    locator = CalcPageLocators.CONVERTED_CURRENCY_FROM_VALUE
-
-
-class GetConvertedValueTo(BasePageElement):
-    locator = CalcPageLocators.CONVERTED_CURRENCY_TO_VALUE
-
-
-class GetDataFromCurrencyFromDropdown(BasePageElement):
-    locator = CalcPageLocators.CURRENCY_FROM_VALUE
-
-
-class GetDataFromCurrencyToDropdown(BasePageElement):
-    locator = CalcPageLocators.CURRENCY_TO_VALUE
-
-
-class GetDataFromCurrencyValueInput(BasePageElement):
-    locator = CalcPageLocators.CURRENCY_VALUE_INPUT
-
-
 class BasePage(object):
     """Base class to initialize the base page that will be called from all pages"""
 
@@ -40,13 +16,30 @@ class BasePage(object):
 
 
 class CalcPage(BasePage):
-    # Declares a variable that will contain the retrieved text
-    set_currency_value = SetCurrencyValue()
-    get_converted_value_from = GetConvertedValueFrom()
-    get_converted_value_to = GetConvertedValueTo()
-    get_data_from_currencyFrom_dropdown = GetDataFromCurrencyFromDropdown()
-    get_data_from_currencyTo_dropdown = GetDataFromCurrencyToDropdown()
-    get_data_from_currencyValue_input = GetDataFromCurrencyValueInput()
+
+    def get_data_from_currencyFrom_dropdown(self):
+        getter = BasePageElement(self.driver, CalcPageLocators.CURRENCY_FROM_VALUE)
+        return getter.element
+
+    def get_data_from_currencyTo_dropdown(self):
+        getter = BasePageElement(self.driver, CalcPageLocators.CURRENCY_TO_VALUE)
+        return getter.element
+
+    def get_data_from_currencyValue_input(self):
+        getter = BasePageElement(self.driver, CalcPageLocators.CURRENCY_VALUE_INPUT)
+        return getter.element
+
+    def get_converted_value_to(self):
+        getter = BasePageElement(self.driver, CalcPageLocators.CONVERTED_CURRENCY_TO_VALUE)
+        return getter.element
+
+    def get_converted_value_from(self):
+        getter = BasePageElement(self.driver, CalcPageLocators.CONVERTED_CURRENCY_FROM_VALUE)
+        return getter.element
+
+    def set_currency_value(self, value):
+        setter = BasePageElement(self.driver, CalcPageLocators.CURRENCY_VALUE_INPUT)
+        setter.element(value)
 
     def is_calculation_finished(self):
         driver = self.driver

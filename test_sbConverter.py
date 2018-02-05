@@ -10,10 +10,9 @@ from decimal import *
 @allure.step('Check default values in converter.')
 def test_check_default_settings(driver):
     calc_page = page.CalcPage(driver)
-    print(calc_page.get_data_from_currencyFrom_dropdown.text)
-    assert_that(calc_page.get_data_from_currencyFrom_dropdown.text), equal_to('RUB')
-    assert_that(calc_page.get_data_from_currencyTo_dropdown.text), equal_to('USD')
-    assert_that((calc_page.get_data_from_currencyValue_input).get_attribute('value')), equal_to('100')
+    assert_that(calc_page.get_data_from_currencyFrom_dropdown().text), equal_to('RUB')
+    assert_that(calc_page.get_data_from_currencyTo_dropdown().text), equal_to('USD')
+    assert_that((calc_page.get_data_from_currencyValue_input()).get_attribute('value')), equal_to('100')
 
 
 @allure.step('Check work of calculator with default data.')
@@ -33,7 +32,7 @@ def test_converting_with_default_settings(driver):
                 rate = Decimal(row[2])
 
     with allure.step('Entering the next value to convert: ' + str(currency_value)):
-        calc_page.set_currency_value = str(currency_value)
+        calc_page.set_currency_value = currency_value
     with allure.step('Convert data by actual rate: ' + str(rate)):
         calc_page.click_convert_button()
         calc_page.is_calculation_finished()
@@ -43,8 +42,8 @@ def test_converting_with_default_settings(driver):
     expected_value_from = str(currency_value) + ',00 ' + currency_from + ' ='
     expected_value_to = convertation_result + ' ' + currency_to
     with allure.step('Verifying result of conversation.'):
-        assert_that((calc_page.get_converted_value_from).text), equal_to(expected_value_from)
-        assert_that((calc_page.get_converted_value_to).text), equal_to(expected_value_to)
+        assert_that(calc_page.get_converted_value_from().text), equal_to(expected_value_from)
+        assert_that(calc_page.get_converted_value_to().text), equal_to(expected_value_to)
 
 
 @allure.step('Enter value of currency and choose currency in calculator and assert calculation result')
@@ -79,6 +78,6 @@ def test_converting_with_changed_currency(driver):
     expected_value_to = str(convertation_result) + ' ' + currency_to
 
     with allure.step('Verifying result of conversation.'):
-        assert_that((calc_page.get_converted_value_from).text), equal_to(expected_value_from)
-        assert_that((calc_page.get_converted_value_to).text), equal_to(expected_value_to)
+        assert_that(calc_page.get_converted_value_from().text), equal_to(expected_value_from)
+        assert_that(calc_page.get_converted_value_to().text), equal_to(expected_value_to)
 

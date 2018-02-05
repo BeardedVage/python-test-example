@@ -6,6 +6,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+import time
 
 
 class BasePage(object):
@@ -47,11 +48,11 @@ class CalcPage(BasePage):
         element = wait.until(EC.visibility_of_element_located((CalcPageLocators.RESULT_BODY)))
 
     def choose_currency_from(self, curr_name):
-        self.driver.execute_script("$(\"select\").css(\"display\", \"block\");")
-        Select(self.driver.find_element_by_css_selector("select[name=\"converterFrom\"]")).select_by_visible_text(curr_name)
+        self.driver.find_element(*CalcPageLocators.CURRENCY_FROM_DROPDOWN_SELECT).click()
+        xpath = '//div[@class="rates-aside__filter-block-line rates-aside__filter-block-line_field_converter-from"]//span[text()="' + curr_name + '"]'
+        self.driver.find_element_by_xpath(xpath).click()
 
     def click_convert_button(self):
         element = self.driver.find_element(*CalcPageLocators.CONVERT_BUTTON)
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         element.click()
-

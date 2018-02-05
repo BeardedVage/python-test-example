@@ -17,3 +17,4 @@ class CalcPageLocators(object):
 
     CONVERTED_CURRENCY_TO_VALUE = (By.CLASS_NAME, 'rates-converter-result__total-to')
 
+    CURRENCY_FROM_DROPDOWN_SELECT = (By.CSS_SELECTOR, 'select[name="converterFrom"] + .select')
